@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+    <div class="form-group">
+        <input formControlName="message" type="email" class="form-control" placeholder="Message">
+        <small *ngIf="messageController.invalid && messageController.touched" class="form-text text-muted">The meesage is mandatory</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

@@ -1,0 +1,2 @@
+<app-messages-receive [message]="m" *ngFor="let m of greetings"></app-messages-receive>
+<app-messages-send (sendEvent)="sendMessage($event)"></app-messages-send>
